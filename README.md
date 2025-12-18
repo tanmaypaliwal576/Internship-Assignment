@@ -22,24 +22,22 @@ Deployment: Netlify (Frontend), Render (Backend)
 
 Project Structure
 Internship-Assignment/
-├── backend/
-│ ├── data/
-│ │ └── chapter.pdf
-│ ├── index.js
-│ ├── package.json
-│ └── .env
-│
-├── frontend/
-│ ├── public/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ └── utils/
-│ ├── index.html
-│ ├── vite.config.js
-│ └── package.json
-│
-└── README.md
+backend/
+data/
+chapter.pdf
+index.js
+package.json
+.env
+frontend/
+public/
+src/
+components/
+pages/
+utils/
+index.html
+vite.config.js
+package.json
+README.md
 
 Future Improvements
 With additional time, the following enhancements can be implemented:
