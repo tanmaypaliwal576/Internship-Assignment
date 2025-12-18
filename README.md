@@ -19,7 +19,6 @@ Tech Stack
 Frontend: React (Vite), JavaScript, HTML5, CSS3, Axios
 Backend: Node.js, Express.js, REST APIs, PDF parsing
 Deployment: Netlify (Frontend), Render (Backend)
-
 Project Structure
 Internship-Assignment/
 backend/
@@ -38,6 +37,7 @@ index.html
 vite.config.js
 package.json
 README.md
+
 
 Future Improvements
 With additional time, the following enhancements can be implemented:
