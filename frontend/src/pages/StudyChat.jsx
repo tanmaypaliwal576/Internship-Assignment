@@ -12,7 +12,10 @@ export default function StudyChat() {
     setMessages((prev) => [...prev, { role: "student", content: question }]);
     setLoading(true);
 
-    const res = await axios.post("http://localhost:3000/api/ask", { question });
+    const res = await axios.post(
+      "https://oligopoly-backend.onrender.com/api/ask",
+      { question }
+    );
 
     setMessages((prev) => [
       ...prev,
