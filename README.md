@@ -1,116 +1,240 @@
 # Oligopoly Study Assistant
-AI-Powered Interactive Study Tool (NotebookLM-Inspired)
 
-An interactive AI-based study assistant designed to help students understand oligopoly and related economics concepts through conversational learning, voice interaction, and curated video resources. The project emphasizes clean architecture, real-world deployment, and a product-oriented engineering approach.
+> 🚧 **This project is currently under active development.** New features, improvements, and optimizations are being added continuously.
 
-Live Demo  
-Frontend: https://oligopoly-citrine-sage-ltd.netlify.app/  
-Backend API: https://oligopoly-backend.onrender.com/
+An AI-powered interactive study assistant inspired by **NotebookLM** that helps students understand **oligopoly** and related economics concepts through conversational AI, voice interaction, and curated educational resources. The project is built with a product-oriented architecture emphasizing scalability, clean code, and real-world deployment.
 
-Key Features  
-• Interactive study chat inspired by NotebookLM  
-• Context-aware AI responses based on study material  
-• Voice-based student questions using speech-to-text  
-• Teacher-style audio responses using text-to-speech  
-• Clear voice-recording popup during microphone usage  
-• Curated video resources for concept clarity and exam preparation  
-• Fully deployed frontend and backend on modern cloud platforms  
+---
 
-Tech Stack  
-Frontend: React (Vite), JavaScript (ES6+), HTML5, CSS3, Axios  
-Backend: Node.js, Express.js, REST APIs, PDF parsing  
-Deployment: Netlify (Frontend), Render (Backend)
+## 🚀 Live Demo
 
-Product-Level Project Structure  
+- **Frontend:** https://oligopoly-citrine-sage-ltd.netlify.app/
+- **Backend:** https://oligopoly-backend.onrender.com/
 
-This project follows a scalable, production-grade structure with clear separation of concerns. The current implementation prioritizes delivery and clarity, while the structure below represents how the application is designed to scale in a real product environment.
+---
 
-Repository Root  
-oligopoly-study-assistant/  
-backend/  
-frontend/  
-README.md  
+## ✨ Features
 
-Backend Structure (Product-Grade Design)  
-backend/  
-src/  
-app.js – Express app initialization and middleware  
-routes/ – API route definitions (e.g., /api/ask)  
-controllers/ – Request handling and flow control  
-services/ – AI logic, voice processing, and business rules  
-utils/ – PDF parsing and helper utilities  
-config/ – Environment and configuration handling  
-data/ – Study material (chapter.pdf)  
-index.js – Server entry point  
-.env – Environment variables  
-package.json – Backend dependencies  
+- 🤖 AI-powered conversational study assistant
+- 📚 Context-aware responses based on study material
+- 🎙️ Voice-based questions using Speech-to-Text
+- 🔊 Teacher-style answers using Text-to-Speech
+- 🎤 Interactive microphone recording interface
+- 🎥 Curated educational video recommendations
+- 📄 PDF-based knowledge retrieval
+- ⚡ Fast and responsive React UI
+- 🌐 Fully deployed frontend and backend
+- 🏗️ Modular and scalable architecture
 
-Frontend Structure (Product-Grade Design)  
-frontend/  
-src/  
-components/ – Reusable UI components (chat input, messages, recording modal)  
-pages/ – Application views (Study Chat, Video Resources)  
-services/ – API communication layer  
-hooks/ – Voice recording and audio logic  
-utils/ – Shared constants and helpers  
-App.jsx – Application root  
-main.jsx – React entry point  
-public/ – Static assets  
-vite.config.js – Vite configuration  
-package.json – Frontend dependencies  
+---
 
-Local Setup Instructions  
+## 🛠️ Tech Stack
 
-1. Clone the repository  
-git clone https://github.com/tanmaypaliwal576/Internship-Assignment.git  
-cd Internship-Assignment  
+### Frontend
 
-2. Backend setup  
-cd backend  
-npm install  
-Create a .env file:  
-PORT=3000  
-Start the backend server:  
-node index.js  
-Backend runs at: http://localhost:3000  
+- React (Vite)
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Axios
 
-3. Frontend setup  
-cd ../frontend  
-npm install  
-npm run dev  
-Frontend runs at: http://localhost:5173  
+### Backend
 
-API Endpoint  
+- Node.js
+- Express.js
+- REST APIs
+- PDF Parsing
 
-POST /api/ask  
+### Deployment
 
-Request body:  
-{  
-  "question": "What is oligopoly?"  
-}  
+- Netlify
+- Render
 
-Response:  
-{  
-  "answer": "Oligopoly is a market structure where a few firms dominate the industry..."  
-}  
+---
 
-Future Improvements  
+## 📁 Project Structure
 
-With additional time, the following enhancements would be implemented:  
-• Preserving chat history across page reloads  
-• Improved UI/UX polish and accessibility  
-• Conversation history sidebar  
-• Advanced voice controls and transcripts  
-• User authentication for personalized learning  
+```text
+Internship-Assignment/
+│
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   ├── controllers/
+│   │   ├── data/
+│   │   ├── routes/
+│   │   ├── services/
+│   │   ├── utils/
+│   │   └── app.js
+│   ├── index.js
+│   ├── package.json
+│   └── .env
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── utils/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
+│
+└── README.md
+```
 
-Author  
+---
 
-Tanmay Paliwal  
-B.Tech Computer Science Student, NMIMS Indore  
-Full Stack Developer (MERN)  
-GitHub: https://github.com/tanmaypaliwal576  
-Email: tanmaypaliwal12345@gmail.com  
+## ⚙️ Getting Started
 
-License  
+### 1. Clone the Repository
 
-This project is created for internship evaluation and educational purposes only.
+```bash
+git clone https://github.com/tanmaypaliwal576/Internship-Assignment.git
+cd Internship-Assignment
+```
+
+### 2. Backend Setup
+
+```bash
+cd backend
+npm install
+```
+
+Create a `.env` file:
+
+```env
+PORT=3000
+```
+
+Start the backend server:
+
+```bash
+node index.js
+```
+
+Backend runs at:
+
+```
+http://localhost:3000
+```
+
+---
+
+### 3. Frontend Setup
+
+```bash
+cd ../frontend
+npm install
+npm run dev
+```
+
+Frontend runs at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📡 API
+
+### POST `/api/ask`
+
+### Request
+
+```json
+{
+  "question": "What is oligopoly?"
+}
+```
+
+### Response
+
+```json
+{
+  "answer": "Oligopoly is a market structure where a few firms dominate an industry..."
+}
+```
+
+---
+
+## 🎯 Highlights
+
+- NotebookLM-inspired AI study experience
+- Voice-enabled learning
+- Context-aware AI responses
+- Clean REST API architecture
+- Product-oriented folder structure
+- Modular frontend and backend
+- Cloud deployment with Netlify & Render
+- Easy to extend and maintain
+
+---
+
+## 🚀 Future Improvements
+
+- User authentication
+- Persistent chat history
+- Conversation sidebar
+- Support for multiple study materials
+- Dark mode
+- Accessibility improvements
+- Download conversations as PDF
+- AI-generated quizzes
+- AI-generated study notes
+- Multi-language support
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create your feature branch
+
+```bash
+git checkout -b feature/your-feature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add your feature"
+```
+
+4. Push to your branch
+
+```bash
+git push origin feature/your-feature
+```
+
+5. Open a Pull Request
+
+---
+
+## 👨‍💻 Author
+
+**Tanmay Paliwal**
+
+B.Tech Computer Science, NMIMS Indore  
+Full Stack MERN Developer
+
+- GitHub: https://github.com/tanmaypaliwal576
+- Email: tanmaypaliwal12345@gmail.com
+
+---
+
+## 📄 License
+
+This project was developed as part of an internship evaluation and is intended for educational and demonstration purposes.
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a **⭐ Star** on GitHub. Your support is greatly appreciated!
